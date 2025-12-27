@@ -1,63 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timolek | Builder & Strategist</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>About Me | Timolek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: #020617;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
+
+    /* About Card Section */
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .card p {
+      line-height: 1.6;
+      color: #e5e7eb;
+      margin-bottom: 10px;
+    }
+
+    /* List Styling */
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #64748b;
+      margin-top: 40px;
+    }
+
+    /* Navigation (optional) */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #38bdf8;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #facc15;
+    }
+
+  </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>Timolek</h1>
-    <p>Computer Science Student · Digital Builder · Strategic Thinker</p>
+    <h1>Hi, I’m Timolek</h1>
+    <p>Computer Science Student & Web Developer</p>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a Computer Science student at Bowen University with a strong interest in building
-      practical digital solutions. I enjoy turning real-life problems into structured systems,
-      whether through code, design, or strategy.
-    </p>
+  <!-- About Section -->
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m a Computer Science student who enjoys building simple,
+        meaningful digital solutions. I’m learning web development
+        and exploring how technology can solve real-world problems.
+      </p>
+      <p>
+        This website is hosted using GitHub Pages.
+      </p>
+    </div>
   </section>
 
-  <section class="skills">
-    <h2>Skills & Focus</h2>
-    <ul>
-      <li>HTML & CSS (Website structuring and layout)</li>
-      <li>Python (Logic, GUI systems, automation)</li>
-      <li>UI/UX Design (Figma-based product thinking)</li>
-      <li>System Design & Strategy</li>
-      <li>Problem Analysis & Planning</li>
-    </ul>
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Python Programming</li>
+        <li>UI/UX Design Basics</li>
+      </ul>
+    </div>
   </section>
 
-  <section class="projects">
-    <h2>Projects & Interests</h2>
-    <p>
-      I’ve worked on and designed ideas such as a library management system, health tracking apps,
-      crypto wallet concepts, and transport solutions for student environments.
-    </p>
-    <p>
-      I focus more on *usefulness* than hype — if it solves a real problem, it matters.
-    </p>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: timolek@example.com</p>
+      <p>GitHub: <a href="https://github.com/Timolek" target="_blank" style="color:#38bdf8;">https://github.com/Timolek</a></p>
+    </div>
   </section>
 
-  <section class="vision">
-    <h2>Vision & Strategy</h2>
-    <p>
-      My approach is simple: understand the problem deeply, design a clear solution,
-      then build step by step. I believe good systems don’t need noise — they need clarity.
-    </p>
-    <p>
-      Long term, I aim to combine technology, design, and business to create platforms
-      that improve everyday experiences.
-    </p>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Timolek. Built with clarity.</p>
+    &copy; 2025 Timolek. All Rights Reserved.
   </footer>
 
 </body>
